@@ -1,0 +1,58 @@
+https://www.quora.com/What-is-the-inverse-covariance-matrix-What-is-its-statistical-meaning
+
+
+What is the inverse covariance matrix? What is its statistical meaning?
+
+
+Jack Rae, Google DeepMind Research Engineer
+Answered December 12, 2013 · Upvoted by Joe Blitzstein, Professor in the Harvard Statistics Department and Yair Livne, Econ PhD from Stanford, 2 years of PhD stats · Author has 109 answers and 1.7M answer views
+
+Originally Answered: What is the inverse covariance matrix?
+
+So here's another perspective, to add to Charles H Martin and Vladimir Novakovski's answer.
+
+The inverse covariance matrix, commonly referred to as the precision matrix displays information about the partial correlations of variables.
+
+With the covariance matrix  Σ , one observes the unconditional correlation between a variable i, to a variable j by reading off the (i,j)-th index. It may be the case that the two variables are correlated, but do not directly depend on each other, and another variable k explains their correlation. If we displayed this information on a conditional independence graph, it would look like:
+i−k−j 
+So for example: if k is the event that it rains, i is the event that your lawn is wet and j is the event that your driveway is wet, then you will notice that i and j are heavily correlated, but once you condition on k - they are pretty uncorrelated. (If you don't believe that, for sake of argument - say you hose the lawn pretty sporadically, and wash your car on the driveway whenever you arbitrarily remember to, and those are the only other ways your lawn / driveway gets wet).
+
+A partial correlation describes the correlation between variable i and j, once you condition on all other variables. If i and j are conditionally independent, such as in the example, then the (i,j)-th element of your precision matrix
+Σ−1i,j 
+will equal zero. Also, if your data follows a multivariate normal then the converse is true, a zero element implies conditional independence. Deriving information about conditional independence is really helpful in understanding how your covariates relate to one another. Short of drawing a full causal graph, this is probably the best summary of covariate relations that you can hope to extract.
+
+=========================================================
+
+https://www.quora.com/What-is-the-inverse-covariance-matrix-What-is-its-statistical-meaning/answer/Vladimir-Novakovski
+Vladimir Novakovski
+·
+December 11, 2013
+started Quora machine learning team, 2012-2014
+Originally Answered: What is the inverse covariance matrix?
+To add to Charles H Martin's answer, one practical intuition of what the inverse covariance matrix "does" is to look at investments. Suppose that we have to choose from various assets that have certain expected returns and certain covariances -- which captures the information about how volatile the assets are and how they correlate with each other. Then, the optimal investment portfolio is  C−1⋅r , where  C is the covariance matrix and  r is the vector of expected returns. So multiplying by the inverse covariance matrix is what gets you from expected returns to how much you actually want to invest in each asset.
+
+
+=============================================================
+
+
+https://www.quora.com/Is-the-inverse-covariance-matrix-also-a-covariance-matrix-Why-or-why-not
+
+# Covariance is a measure of how much two variables move in the same direction (i.e. vary together). Covariance between two variables also captures the effects of the others. For example, strong covariance between variable 1 and variable 2 with a third variable 3 will induce a covariance between variable 1 and variable 2.
+
+# Deriving the inverse covariance matrix (also called precision matrix) from the covariance matrix gives covariation of two variables while conditioning on the potential influence of the other ones involved in the analysis. In other words, it removes the effect of other variables. The precision matrix thus allows to obtain direct covariation between two variables by capturing partial correlations. It gives the conditional independent covariation between two variables. Say differently, variable 1 and variable 2 are not connected if the covariance can be explain by a third variable 3.
+
+
+Sources: Varoquaux et al, 2010, smith et al, 2011, Varoquaux and Craddock, 2013
+
+
+http://papers.nips.cc/paper/4080-brain-covariance-selection-better-individual-functional-connectivity-models-using-population-prior.pdf
+
+
+https://arxiv.org/pdf/1304.3880.pdf
+
+
+======================
+
+https://www.quora.com/What-is-the-physical-meaning-of-inverse-covariance-matrix-or-concentration-matrix-or-precision-matrix-and-how-does-one-calculate-it
+
+

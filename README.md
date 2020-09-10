@@ -10,7 +10,15 @@
 [Aleksey Bilogur website/blog/code etc](https://www.residentmar.io/)<br>
 []()<br>
 
-
+# TDG - topological Data Graphs
+[https://cs.hse.ru/ata-lab.   Международная лаборатория алгебраической топологии и ее приложений](https://cs.hse.ru/ata-lab/)<br>
+[2019: Mathieu Carrière: Mixing Topology and Deep Learning with PersLay](https://towardsdatascience.com/mixing-topology-and-deep-learning-with-perslay-2e60af69c321)<br>
+[Michael Bronstein's BLOG, Professor @imperialcollege, Head of Graph ML Research ](https://towardsdatascience.com/@michael.bronstein)<br>
+[2020: Michael Bronstein. Simple scalable graph neural networks](https://towardsdatascience.com/simple-scalable-graph-neural-networks-7eb04f366d07)<br>
+[]()<br>
+[]()<br>
+[]()<br>
+[]()<br>
 
 or create a new repository on the command line
 

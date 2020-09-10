@@ -2,6 +2,14 @@
 
 2020.09.08
 
+# Examples of graphing packages, papers and notebooks
+[Bilogur, (2018). Missingno: a missing data visualization suite. Journal of Open Source Software, 3(22), 547.](https://joss.theoj.org/papers/10.21105/joss.00547)<br>
+[]()<br>
+[]()<br>
+[]()<br>
+[]()<br>
+
+
 
 or create a new repository on the command line
 

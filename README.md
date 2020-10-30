@@ -3,6 +3,20 @@
 2020.09.08
 
 # Examples of graphing packages, papers and notebooks
+
+[https://github.com/KonstantinKlepikov/GCN_lect](https://github.com/KonstantinKlepikov/GCN_lect)<br>
+[GRAPH CONVOLUTIONAL NETWORKS, 
+THOMAS KIPF 
+https://tkipf.github.io/graph-convolutional-networks/](https://tkipf.github.io/graph-convolutional-networks/)<br>
+[Graph Clustering with Graph Neural Networks, 
+Anton Tsitsulin, John Palowitch, Bryan Perozzi, Emmanuel Müller https://arxiv.org/abs/2006.16904](https://arxiv.org/abs/2006.16904)<br>
+[Bayesian Optimization  https://github.com/fmfn/BayesianOptimization](https://github.com/fmfn/BayesianOptimization)<br>
+[]()<br>
+[]()<br>
+[]()<br>
+[]()<br>
+[]()<br>
+
 ### MissingNo
 [GitHub repo of  missing data visualizations ResidentMario/missingno by A.Bilogur](https://github.com/ResidentMario/missingno)<br>
 [Kaggle Kernel by JPMiller illustrating missingno](https://www.kaggle.com/jpmiller/finding-patterns-in-the-scored-targets)<br>
